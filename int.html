@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPI QR Code</title>
+</head>
+<body>
+
+<h2>UPI QR Generator</h2>
+
+<!-- <form method="POST">
+    <input type="text" name="upi" placeholder="UPI ID" required><br><br>
+    <input type="text" name="name" placeholder="Name"><br><br>
+    <input type="number" name="amount" placeholder="Amount"><br><br>
+    <button type="submit">Generate UPI QR</button>
+</form> -->
+
+<br>
+
+{% if qr_url %}
+    <h3>Generated QR Code:</h3>
+    <img src="{{ qr_url }}" alt="UPI QR Code">
+{% endif %}
+
+</body>
+</html>
+
