@@ -20,6 +20,7 @@ def index():
         api = "https://api.qrserver.com/v1/create-qr-code/"
         qr_url = f"{api}?data={upi_encoded}&size=300x300"
 
-    return render_template("int.html", qr_url=qr_url)
+    return render_template("index.html", qr_url=qr_url)
 if __name__ == "__main__":
+
     app.run(debug=True)
